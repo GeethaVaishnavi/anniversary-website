@@ -1,0 +1,806 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+:root{
+  --wine:#6f263c; --gold:#c89b4b; --cream:#fbf5ec; --dark:#2d2425;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Poppins",sans-serif;color:var(--dark)}
+.hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;
+  color:#fff;background:linear-gradient(rgba(45,20,28,.48),rgba(45,20,28,.8)),
+  url("images/wedding.jpg") center/cover no-repeat;
+}
+.hero-content{max-width:900px;padding:30px}
+.eyebrow{color:#f8db9a;font-size:.75rem;letter-spacing:4px;font-weight:600;margin-bottom:20px}
+h1{font-family:"Playfair Display",serif;font-size:clamp(3.4rem,9vw,7rem);line-height:1.1}
+h1 span{color:#f5d897;font-style:italic}
+.subtitle{max-width:650px;margin:28px auto;line-height:1.8}
+.date-badge{display:inline-block;padding:11px 25px;border:1px solid rgba(255,255,255,.6);border-radius:30px;margin-bottom:25px}
+.btn,.next-btn{
+  display:inline-block;text-decoration:none;border-radius:50px;font-weight:600;transition:.3s
+}
+.btn{padding:14px 32px;background:#fff;color:var(--wine)}
+.btn:hover{transform:translateY(-4px)}
+.chapter-body{min-height:100vh;background:linear-gradient(135deg,#fbf5ec,#f1e2d1)}
+.chapter-page{min-height:100vh;max-width:1200px;margin:auto;padding:50px 40px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.chapter-number{color:var(--gold);font-size:.8rem;font-weight:600;letter-spacing:5px;margin-bottom:45px}
+.chapter-content{width:100%;display:flex;align-items:center;justify-content:center;gap:85px}
+.reverse-layout{flex-direction:row-reverse}
+.chapter-image{width:430px;height:520px;overflow:hidden;border-radius:12px;background:#fff;
+ box-shadow:20px 20px 0 rgba(200,155,75,.16),0 20px 50px rgba(77,46,48,.15)}
+.chapter-image img{width:100%;height:100%;object-fit:cover;display:block}
+.chapter-details{display:flex;align-items:center}
+.date-display{display:flex;align-items:center;gap:15px;background:var(--wine);color:#fff;padding:20px 35px;border-radius:50px;font-size:1.05rem;font-weight:500;letter-spacing:1px;white-space:nowrap;box-shadow:0 15px 35px rgba(111,38,60,.25)}
+.emoji{font-size:1.5rem}
+.next-btn{margin-top:70px;padding:14px 35px;border:1.5px solid var(--wine);color:var(--wine)}
+.next-btn:hover{background:var(--wine);color:#fff;transform:translateY(-4px)}
+@media(max-width:850px){
+ .chapter-page{padding:45px 20px}
+ .chapter-content,.reverse-layout{flex-direction:column;gap:35px}
+ .chapter-image{width:100%;max-width:450px;height:500px}
+ .chapter-details{justify-content:center}
+}
+@media(max-width:500px){
+ .chapter-image{height:430px}
+ .date-display{font-size:.85rem;padding:16px 20px;white-space:normal;text-align:center}
+ .chapter-number{letter-spacing:3px;margin-bottom:30px}
+}
+/* =========================
+   DAD STORY SECTION
+========================= */
+
+.dad-story {
+
+    max-width: 430px;
+
+}
+
+
+/* DATE PAINA UNTUNDI */
+
+.dad-story .date-display {
+
+    margin-bottom: 35px;
+
+}
+
+
+/* HEADING */
+
+.dad-story h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.4rem;
+
+    color: var(--wine);
+
+    line-height: 1.3;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* PARAGRAPHS */
+
+.dad-story p {
+
+    font-size: 0.95rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+
+    color: #5b4a4d;
+
+}
+
+
+/* QUOTE */
+
+.dad-story .dad-quote {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.2rem;
+
+    font-style: italic;
+
+    color: var(--wine);
+
+    border-left: 3px solid var(--gold);
+
+    padding-left: 18px;
+
+    margin-top: 108px;
+
+}
+
+/* =========================
+   MOM STORY SECTION
+========================= */
+
+.mom-story {
+    max-width: 430px;
+}
+
+
+/* BIRTHDAY DATE */
+
+.mom-story .date-display {
+    margin-bottom: 35px;
+}
+
+
+/* HEADING */
+
+.mom-story h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.4rem;
+
+    color: var(--wine);
+
+    line-height: 1.3;
+
+    margin-bottom: 25px;
+}
+
+
+/* STORY */
+
+.mom-story p {
+    font-size: 0.95rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+
+    color: #5b4a4d;
+}
+
+
+/* QUOTE */
+
+.mom-story .mom-quote {
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.2rem;
+
+    font-style: italic;
+
+    color: var(--wine);
+
+    border-left: 3px solid var(--gold);
+
+    padding-left: 18px;
+
+    margin-top: 108px;
+}
+
+/* =========================
+   FIRST BORN STORY SECTION
+========================= */
+
+.firstborn-story {
+    max-width: 430px;
+}
+
+
+/* BIRTH DATE */
+
+.firstborn-story .date-display {
+    margin-bottom: 35px;
+}
+
+
+/* HEADING */
+
+.firstborn-story h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.4rem;
+
+    color: var(--wine);
+
+    line-height: 1.3;
+
+    margin-bottom: 25px;
+}
+
+
+/* STORY */
+
+.firstborn-story p {
+    font-size: 0.95rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+
+    color: #5b4a4d;
+}
+
+
+/* QUOTE */
+
+.firstborn-story .firstborn-quote {
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.2rem;
+
+    font-style: italic;
+
+    color: var(--wine);
+
+    border-left: 3px solid var(--gold);
+
+    padding-left: 18px;
+
+    margin-top: 108px;
+}
+
+/* =========================
+   WEDDING LOVE STORY
+========================= */
+
+.wedding-page {
+    padding-top: 70px;
+}
+
+
+/* MAIN STORY */
+
+.wedding-story {
+    max-width: 430px;
+}
+
+
+.wedding-story .date-display {
+    margin-bottom: 35px;
+}
+
+
+.wedding-story h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.4rem;
+
+    color: var(--wine);
+
+    line-height: 1.3;
+
+    margin-bottom: 25px;
+}
+
+
+.wedding-story p {
+    font-size: 0.95rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+
+    color: #5b4a4d;
+}
+
+
+/* =========================
+   LOVE LETTER SECTION
+========================= */
+
+.love-letter-section {
+    max-width: 850px;
+
+    margin: 100px auto 0;
+
+    text-align: center;
+
+    padding: 70px 50px;
+
+    background: #fffaf3;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 15px 45px
+        rgba(77, 46, 48, 0.08);
+}
+
+
+.love-letter-icon {
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+}
+
+
+.small-heading {
+    color: var(--gold);
+
+    font-size: 0.75rem;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+
+.love-letter-section h2 {
+    font-family: "Playfair Display", serif;
+
+    color: var(--wine);
+
+    font-size: 2.3rem;
+
+    line-height: 1.4;
+
+    margin-bottom: 25px;
+}
+
+
+.love-letter-section > p {
+    max-width: 600px;
+
+    margin: auto;
+
+    line-height: 1.9;
+
+    color: #5b4a4d;
+}
+
+
+.letter-box {
+    max-width: 600px;
+
+    margin: 40px auto 0;
+
+    padding: 35px;
+
+    background: #f5eadc;
+
+    border-radius: 8px;
+
+    font-family: "Playfair Display", serif;
+
+    font-style: italic;
+
+    line-height: 1.8;
+
+    color: var(--wine);
+
+    position: relative;
+}
+
+
+.letter-mark {
+    font-size: 4rem;
+
+    color: var(--gold);
+
+    line-height: 0;
+}
+
+
+/* =========================
+   PHONE CALL SECTION
+========================= */
+
+.calls-section {
+    max-width: 850px;
+
+    margin: 100px auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 50px;
+}
+
+
+.call-icon {
+    min-width: 120px;
+
+    height: 120px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--wine);
+
+    border-radius: 50%;
+
+    font-size: 3rem;
+
+    box-shadow:
+        0 15px 30px
+        rgba(111, 38, 60, 0.2);
+}
+
+
+.calls-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.3rem;
+
+    color: var(--wine);
+
+    line-height: 1.3;
+
+    margin-bottom: 20px;
+}
+
+
+.calls-content p {
+    line-height: 1.9;
+
+    color: #5b4a4d;
+
+    margin-bottom: 20px;
+}
+
+
+.call-quote {
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.15rem;
+
+    font-style: italic;
+
+    color: var(--wine) !important;
+
+    border-left: 3px solid var(--gold);
+
+    padding-left: 20px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================
+   FOREVER SECTION
+========================= */
+
+.forever-section {
+    max-width: 850px;
+
+    margin: 50px auto;
+
+    padding: 80px 40px;
+
+    text-align: center;
+
+    background: var(--wine);
+
+    color: white;
+
+    border-radius: 15px;
+}
+
+
+.forever-icon {
+    font-size: 3rem;
+}
+
+
+.forever-section h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 3rem;
+
+    color: #f5d897;
+
+    margin: 20px 0;
+}
+
+
+.forever-text {
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+    max-width: 550px;
+
+    margin: 20px auto;
+}
+
+
+.forever-section h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.3rem;
+
+    line-height: 1.4;
+
+    color: #f5d897;
+
+    margin: 30px 0;
+}
+
+
+.forever-section p {
+    max-width: 600px;
+
+    margin: 20px auto;
+
+    line-height: 1.9;
+}
+
+
+.forever-quote {
+    margin-top: 35px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.4rem;
+
+    font-style: italic;
+
+    color: #f5d897;
+}
+
+
+/* =========================
+   MOBILE VIEW
+========================= */
+
+@media (max-width: 850px) {
+
+    .love-letter-section {
+        margin-top: 70px;
+
+        padding: 50px 25px;
+    }
+
+
+    .calls-section {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+
+        margin: 70px auto;
+    }
+
+
+    .call-icon {
+        min-width: 100px;
+
+        height: 100px;
+    }
+
+
+    .call-quote {
+        text-align: left;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .wedding-story h2,
+    .love-letter-section h2,
+    .calls-content h2 {
+        font-size: 2rem;
+    }
+
+
+    .forever-section {
+        padding: 60px 20px;
+    }
+
+
+    .forever-section h2 {
+        font-size: 2.3rem;
+    }
+
+
+    .forever-section h3 {
+        font-size: 1.8rem;
+    }
+
+
+    .letter-box {
+        padding: 25px 20px;
+    }
+
+}
+
+/* =========================
+   SECOND BORN STORY
+========================= */
+
+.secondborn-story {
+    max-width: 430px;
+}
+
+
+/* DATE */
+
+.secondborn-story .date-display {
+    margin-bottom: 35px;
+}
+
+
+/* HEADING */
+
+.secondborn-story h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.4rem;
+
+    color: var(--wine);
+
+    line-height: 1.3;
+
+    margin-bottom: 25px;
+}
+
+
+/* STORY */
+
+.secondborn-story p {
+    font-size: 0.95rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+
+    color: #5b4a4d;
+}
+
+
+/* QUOTE */
+
+.secondborn-story .secondborn-quote {
+    font-family: "Playfair Display", serif;
+
+    font-size: 1.2rem;
+
+    font-style: italic;
+
+    color: var(--wine);
+
+    border-left: 3px solid var(--gold);
+
+    padding-left: 18px;
+
+    margin-top: 28px;
+}
+
+
+/* =========================
+   FINAL FAMILY MESSAGE
+========================= */
+
+.family-ending {
+    max-width: 850px;
+
+    margin: 100px auto 30px;
+
+    padding: 80px 50px;
+
+    text-align: center;
+
+    background: var(--wine);
+
+    color: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(111, 38, 60, 0.18);
+}
+
+
+.ending-heart {
+    font-size: 3rem;
+
+    display: block;
+
+    margin-bottom: 20px;
+}
+
+
+.family-ending h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2.8rem;
+
+    color: #f5d897;
+
+    margin-bottom: 25px;
+}
+
+
+.family-ending p {
+    max-width: 600px;
+
+    margin: 15px auto;
+
+    line-height: 1.9;
+}
+
+
+.anniversary-message {
+    font-family: "Playfair Display", serif;
+
+    font-size: 2rem;
+
+    color: #f5d897;
+
+    margin-top: 40px !important;
+}
+
+
+.years-message {
+    display: inline-block;
+
+    margin-top: 20px !important;
+
+    padding: 10px 22px;
+
+    border: 1px solid
+        rgba(255,255,255,0.5);
+
+    border-radius: 30px;
+
+    font-size: 0.8rem;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+/* =========================
+   SECOND BORN IMAGE SIZE ONLY
+========================= */
+
+.secondborn-image {
+    width: 550px;
+    height: 520px;
+}
+
+.secondborn-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* TABLET / MOBILE */
+
+@media (max-width: 850px) {
+
+    .secondborn-image {
+        width: 100%;
+        max-width: 550px;
+        height: 500px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .secondborn-image {
+        width: 100%;
+        height: 430px;
+    }
+
+}
