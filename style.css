@@ -8,7 +8,7 @@ body{font-family:"Poppins",sans-serif;color:var(--dark)}
 .hero{
   min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;
   color:#fff;background:linear-gradient(rgba(45,20,28,.48),rgba(45,20,28,.8)),
-  url("images/wedding.jpg") center/cover no-repeat;
+  url("wedding.jpg") center/cover no-repeat;
 }
 .hero-content{max-width:900px;padding:30px}
 .eyebrow{color:#f8db9a;font-size:.75rem;letter-spacing:4px;font-weight:600;margin-bottom:20px}
